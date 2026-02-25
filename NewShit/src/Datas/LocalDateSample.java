@@ -21,5 +21,10 @@ public class LocalDateSample {
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
                 LocalDate dataBrFormatada = LocalDate.parse(dataBr, formatter);
                 System.out.println("data que veio no formato br 27/12/2002 fomratada para iso " + dataBrFormatada);
+
+
+                LocalDate aniversarioFelipe = LocalDate.of(2002, 12, 27);
+                LocalDate dataAos34anos = LocalDate.now().plusYears(10);
+                System.out.println("Felipe terá 34 anos em " + dataAos34anos);
     }
 }
